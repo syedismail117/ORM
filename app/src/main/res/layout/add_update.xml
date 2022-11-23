@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:background="#ab9dba"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add "
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_margin="30dp"
+        android:gravity="center"
+        android:background="#654ea3"
+        android:textColor="@color/white"/>
+
+    <EditText
+        android:id="@+id/updTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:hint=" Title"
+        android:textColorHint="@color/white"
+        android:padding="12dp"
+        android:layout_marginBottom="2dp"
+        android:background="#654ea3"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"/>
+    <EditText
+        android:id="@+id/updDis"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint=" description"
+        android:layout_gravity="center"
+        android:padding="12dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:textColorHint="@color/white"
+        android:background="#654ea3"
+        android:inputType="number"/>
+    <Button
+        android:id="@+id/btnadcontct"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="add"
+        android:layout_marginRight="10dp"
+        android:textColor="@color/white"
+        android:backgroundTint="#654ea3"
+        android:layout_gravity="end"/>
+
+</LinearLayout>
