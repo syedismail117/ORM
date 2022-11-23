@@ -63,23 +63,20 @@ public class MainActivity extends AppCompatActivity {
                     Intent intent = new Intent ( MainActivity.this, MainActivity2.class );
                     startActivity ( intent );
 
+                    title.setText ( " " );
+                    Dis.setText ( " " );
+
                     Toast.makeText ( getApplicationContext (), "update data successfully", Toast.LENGTH_SHORT ).show ();
 
-                }else {
-                    if ((DataBaseController.getInstance().insertUserData(itemsinfo))){
-                        Toast.makeText ( MainActivity.this, "user added successfully", Toast.LENGTH_SHORT ).show ();
-                        title.setText ( " " );
-                        Dis.setText ( " " );
+                }else if ((DataBaseController.getInstance().insertUserData(itemsinfo))){
+                    Toast.makeText ( MainActivity.this, "user added successfully", Toast.LENGTH_SHORT ).show ();
+                    title.setText ( " " );
+                    Dis.setText ( " " );
 
-
-
-                        Toast.makeText ( getApplicationContext (), "update data successfully", Toast.LENGTH_SHORT ).show ();
-
-                    }else {
+                } else {
                         Toast.makeText(getApplicationContext(), "not storing the data", Toast.LENGTH_SHORT).show();
-                    }
                 }
-                    }
+            }
         } );
     }
 }

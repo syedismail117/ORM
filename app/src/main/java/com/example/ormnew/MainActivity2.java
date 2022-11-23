@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.TextView;
 
@@ -25,5 +26,13 @@ public class MainActivity2 extends AppCompatActivity {
         recyclerView.setLayoutManager( new LinearLayoutManager (MainActivity2.this));
         itmAdapter.notifyDataSetChanged();
 
+
+
+    }
+
+    @Override
+    public void onBackPressed() {
+        DataBaseController.getInstance ().data=null;
+        startActivity ( new Intent (MainActivity2.this,MainActivity.class) );
     }
 }
