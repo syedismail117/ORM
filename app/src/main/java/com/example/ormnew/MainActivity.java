@@ -71,6 +71,8 @@ public class MainActivity extends AppCompatActivity {
                         title.setText ( " " );
                         Dis.setText ( " " );
 
+
+
                         Toast.makeText ( getApplicationContext (), "update data successfully", Toast.LENGTH_SHORT ).show ();
 
                     }else {
